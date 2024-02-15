@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/css/myProject.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="left">
+            <ul>
+                <img src="./assets/image/logo.png" alt="logoImage">
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="index.html">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <a href="contactMe.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <div>
+        <div style="background-color: rgb(205, 213, 216);">
+            <h1 style="text-align: center;">ADD MY PROJECT</h1>
+            <form class="box" onsubmit="addBlog(event)">
+                <div>
+                    <label for="inputName">Project Name</label> <br>
+                    <input style="width: 100%;" id="inputName" type="text">
+                </div>
+                <div style="display: flex; margin-top: 15px; ">
+                    <div>
+                        <label for="inputDate">Start Date</label> <br>
+                        <input style="width: 130%;" id="inputDate" type="date">
+                    </div>
+                    <div style="margin-left: 70px;">
+                        <label for="inputEdate">End Date</label><br>
+                        <input style=" width: 130%;" id="inputEdate" type="date">
+                    </div>
+                </div>
+                <div style="margin-top: 15px;">
+                    <label for="inputDescription">Description</label><br>
+                    <textarea id="inputDescription" cols="60" rows="5"></textarea>
+                </div>
+                
+
+                <div style="margin-top: 15px;"> <label>Tecnologies</label>
+                    <div style="display: flex;">
+                        <div>
+                            <input id="nodeJs" type="checkbox" value="nodejs"> <label>Node JS</label>
+                        </div>
+                        <div>
+                            <input id="nextJs" type="checkbox" value="nextjs"> <label>Next JS</label>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div>
+                            <input id="reactJs" type="checkbox" value="reactjs"> <label>React JS</label>
+                        </div>
+                        <div>
+                            <input id="typeScript" type="checkbox" value="typescript"> <label>TypeScript</label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label for="">Upload Images</label>
+                    <input style=" width: 100%;padding: 8px; border: 1px solid #c4c4c4; background: white; cursor: pointer;" type="file">
+                </div>
+                <div style="margin-top: 15px; padding-bottom: 40px; ">
+                    <button style="background-color: rgb(23, 23, 48); color: white; border-radius: 10px; padding: 5px 20px 5px 20px; text-decoration: none;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <hr class="line" />
+    
+    <div style="height: 500px;">
+        <h1 style="text-align: center;">MY PROJECT</h1>
+        <br>
+        <div id="contents" class="blog-list" style="display: flex; flex-wrap: wrap; "></div>
+        
+        
+        <br>
+    </div>
+
+    <script src="assets/js/blog.js"></script>
+</body>
+</html>

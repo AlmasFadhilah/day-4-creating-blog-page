@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    padding: 0 80px;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+
+nav .left ul{
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+nav .left ul img{
+
+margin-right: 40%;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav .left ul .active a{
+    font-weight: bold;
+    color: black;
+}
+
+nav .right a{
+    background-color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius:  20px;
+    color: white;
+}
+
+nav .left ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+/* NAVBAR END */
+
+
+form{
+    width: 350px;
+    
+    margin: 10% auto;
+}
+/* width itu luas item
+margin 20% itu memberi jarak item dari halaman atas */
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form div {
+    margin-top: 10px;
+}
+
+form div button {
+    background-color: black;
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
